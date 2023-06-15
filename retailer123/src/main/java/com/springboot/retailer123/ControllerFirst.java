@@ -56,6 +56,32 @@ public class ControllerFirst {
     	return map.get(Integer.valueOf(id));
     }
     
+    @GetMapping("/firstMonthEarned")
+    public int firstMonthEarned(@RequestParam String id) {
+    	
+    
+    	return map.get(Integer.valueOf(id)).getPointsFor3month().get(0).getPoints();
+    }
+    
+    @GetMapping("/secondMonthEarned")
+    public int secondMonthEarned(@RequestParam String id) {
+    	
+    	return map.get(Integer.valueOf(id)).getPointsFor3month().get(1).getPoints();
+    }
+    
+    @GetMapping("/thirdMonthEarned")
+    public int thirdMonthEarned(@RequestParam String id) {
+    	
+    	return map.get(Integer.valueOf(id)).getPointsFor3month().get(2).getPoints();
+    }
+    
+    
+    @GetMapping("/totalEarned3month")
+    public int totalEarned3month(@RequestParam String id) {
+    	
+    	return map.get(Integer.valueOf(id)).getTotalPoints();
+    }
+    
     
     public static class CustomerData {
         private List<Customer> customers;
