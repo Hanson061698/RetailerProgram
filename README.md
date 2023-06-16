@@ -37,6 +37,8 @@ then you will get:
 
 get points for first month: http://localhost:8080/api/firstMonthEarned?id=1 
 
-get points for second month: http://localhost:8080/api/secondMonthEarned?id=1 get points for third month: http://localhost:8080/api/thirdMonthEarned?id=1
+get points for second month: http://localhost:8080/api/secondMonthEarned?id=1 
+
+get points for third month: http://localhost:8080/api/thirdMonthEarned?id=1
 
 get totalPoints for 3 month: http://localhost:8080/api/totalEarned3month?id=1
