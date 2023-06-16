@@ -35,6 +35,8 @@ then you will get:
 
 { "name": "hanson", "email": "hansonchen8686@gmail.com", "pointsFor3month": [ { "month": 1, "amount": 100, "points": 50 }, { "month": 2, "amount": 140, "points": 130 }, { "month": 3, "amount": 120, "points": 90 } ], "totalPoints": 270, "id": 1 }
 
-get points for first month: http://localhost:8080/api/firstMonthEarned?id=1 get points for second month: http://localhost:8080/api/secondMonthEarned?id=1 get points for third month: http://localhost:8080/api/thirdMonthEarned?id=1
+get points for first month: http://localhost:8080/api/firstMonthEarned?id=1 
+
+get points for second month: http://localhost:8080/api/secondMonthEarned?id=1 get points for third month: http://localhost:8080/api/thirdMonthEarned?id=1
 
 get totalPoints for 3 month: http://localhost:8080/api/totalEarned3month?id=1
