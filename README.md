@@ -16,11 +16,11 @@ I designed JSON based on the requirement:
         },
         {
           "month": 2,
-          "amount": 50
+          "amount": 140
         },
         {
           "month": 3,
-          "amount": 140
+          "amount": 120
         }
       ]
     }
