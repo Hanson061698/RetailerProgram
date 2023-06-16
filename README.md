@@ -1,5 +1,5 @@
 # RetailerProgram
-Calculate the points customer earned and save it with customer details to the map, each time when you want to check the points, use id as a key for the map.
+Calculate the points customer earned and save it with customer details to the map;
 
 I designed JSON based on the requirement:
 
