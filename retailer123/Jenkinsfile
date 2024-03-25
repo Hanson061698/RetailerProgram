@@ -1,0 +1,36 @@
+pipeline {
+    agent any
+
+    triggers {
+        // Trigger on changes in your source branch
+        scm '*'
+    }
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building...'
+                // Add your actual build steps here. For example:
+                // sh 'make build' or 'mvn package'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing...'
+                // Add your actual test steps here. For example:
+                // sh 'make test' or 'mvn test'
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Build was successful!'
+            // Here's where you would update the build status in your SCM tool
+            // For the purpose of this example, we'll just use a placeholder key
+            // Replace 'myPlaceholderKey' with your actual key
+            buildResult 'SUCCESSFUL'
+            key 'myPlaceholderKey'
+        }
+    }
+}
